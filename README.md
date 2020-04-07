@@ -1,1 +1,9 @@
-# chess_ai
+# Chess bot
+It use Alpha–beta pruning to predict the best possible move.By default bot play as black it can be change at game.py line  19. Replace 'b' with 'w' only.To paly run game.py
+
+# Alpha–beta pruning
+Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. It is an adversarial search algorithm used commonly for machine playing of two-player games (Tic-tac-toe, Chess, Go, etc.). It stops evaluating a move when at least one possibility has been found that proves the move to be worse than a previously examined move. Such moves need not be evaluated further. When applied to a standard minimax tree, it returns the same move as minimax would, but prunes away branches that cannot possibly influence the final decision.The algorithm maintains two values, alpha and beta, which represent the minimum score that the maximizing player is assured of and the maximum score that the minimizing player is assured of respectively. Initially, alpha is negative infinity and beta is positive infinity, i.e. both players start with their worst possible score. Whenever the maximum score that the minimizing player (i.e. the "beta" player) is assured of becomes less than the minimum score that the maximizing player (i.e., the "alpha" player) is assured of (i.e. beta < alpha), the maximizing player need not consider further descendants of this node, as they will never be reached in the actual play.
+To illustrate this with a real-life example, suppose you're playing chess and it is your turn. You have found a good move that will improve your position. Denote this move A. You continue to look for moves, making sure you haven't missed an even better one. You find a move that appears to be good. Denote this move B. You then realize that move B allows your opponent to force checkmate in two moves. Thus, you no longer need to consider any other possible outcomes from playing move B, since you know that your opponent can force a win.
+
+# Requirement
+Python 3.6 or above, pygame
