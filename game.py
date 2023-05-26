@@ -17,7 +17,7 @@ while not gameEnded:
             gameEnded = True
     
         if board.turn == 'b':
-            i = minmaxroot(3,board,True)
+            i = minmaxroot(2,board,True)
             print(i)
             piece = board.board[i[0][0]][i[0][1]]
             board.make_move(i[1],piece)
